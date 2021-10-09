@@ -1,7 +1,7 @@
 pipeline {
     environment {
         mavenHome = tool 'localMaven'
-        registry = 'trinichacon/achistar-program'
+        registry = 'trinichacon/final-project'
         registryCredential = 'MyDockerHubID'
         dockerImage = ''
     }
