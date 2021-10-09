@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage ("Git Clone") {
             steps {
-                git url: 'https://github.com/trinichacon/AchiStar-Program.git'
+                git url: 'https://github.com/trinichacon/Final-Project.git'
             }
         }
 
