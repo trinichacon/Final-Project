@@ -38,6 +38,15 @@ pipeline {
                 }
             }
         }
+        
+        stage("Ansible Deploy") {
+            steps {
+                ansiblePlaybook( 
+                    playbook: 'deploy-file.yaml',
+                    inventory: 'dev.inv', 
+                    credentialsId: 'ubuntu',
+                    extras: '-vvv') 
+            }
+        }
     }
 }
-
